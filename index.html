@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S31ght 商店</title>
+  <meta name="description" content="Seven 31ght 商店：Discord Nitro、Spotify、熱門遊戲與網路服務一站式選購。快速、安心、優惠。">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-dark: #0f172a;
+      --card-dark: #1e293b;
+      --text-light: #f1f5f9;
+      --accent-green: #10b981;
+      --accent-green-hover: #34d399;
+      --border-color: #334155;
+      --shadow-color: rgba(0,0,0,0.4);
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      overflow-x: hidden;
+      padding-bottom: 70px; /* 預留空間避免固定 footer 擋住內容 */
+    }
+    header.hero {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: linear-gradient(135deg, #065f46, #0f172a);
+    }
+    header.hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent-green), #4ade80);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 15px;
+    }
+    header.hero p {
+      font-size: 1.3rem;
+      color: #d1fae5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+    .product {
+      background-color: var(--card-dark);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 8px 20px var(--shadow-color);
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .product:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 32px rgba(0,0,0,.55);
+    }
+    .product .media {
+      width: 100%;
+      aspect-ratio: 1/1;
+      background: radial-gradient(120% 120% at 50% 0%, #0b1222 0%, #1e293b 70%);
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 14px;
+    }
+    .product .media img {
+      width: 70%;
+      height: 70%;
+      object-fit: contain;
+    }
+    .product h2 {
+      font-size: 1.3em;
+      margin-bottom: 8px;
+    }
+    .product p.price {
+      color: var(--accent-green);
+      font-weight: 600;
+      margin-bottom: 12px;
+      font-size: 1.1em;
+    }
+    .btn {
+      background-color: var(--accent-green);
+      color: white;
+      padding: 10px 22px;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .btn:hover {
+      background-color: var(--accent-green-hover);
+      transform: translateY(-2px);
+    }
+
+    /* 個人資料區塊 */
+    .profile {
+      max-width: 800px;
+      margin: 50px auto 20px;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      background-color: var(--card-dark);
+    }
+    .profile h2 {
+      margin-bottom: 10px;
+      color: var(--accent-green);
+    }
+
+    /* 固定 footer 在底部 */
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 14px;
+      border-top: 1px solid var(--border-color);
+      z-index: 1000;
+    }
+    footer a {
+      color: var(--accent-green);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+      color: var(--accent-green-hover);
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>✨ Seven 31ght 商店 ✨</h1>
+    <p>您的遊戲、娛樂與網路服務一站式商店</p>
+  </header>
+
+  <div class="container">
+    <div class="product-grid">
+
+      <!-- Discord -->
+      <div class="product">
+        <div class="media">
+          <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDaK1XdUso6cUMpI9hAdPUU_FNs11cY1X284vsHrnWtRw7oqRpN1m9YAg21d_aNKnIo-&format=source&h=307" alt="Discord Nitro" loading="lazy" decoding="async">
+        </div>
+        <h2>Discord Nitro 高級訂閱版</h2>
+        <p class="price">NT$160</p>
+        <a class="btn" href="https://discord.com/channels/1330046493180170341/1330076249640665129" target="_blank" rel="noopener noreferrer">立即購買</a>
+      </div>
+
+      <!-- Spotify -->
+      <div class="product">
+        <div class="media">
+          <img src="https://m.media-amazon.com/images/I/51rttY7a+9L._h1_.png" alt="Spotify Premium" loading="lazy" decoding="async">
+        </div>
+        <h2>Spotify Premium（12 個月）</h2>
+        <p class="price">NT$600</p>
+        <a class="btn" href="https://discord.com/channels/1330046493180170341/1331556274063675483" target="_blank" rel="noopener noreferrer">立即購買</a>
+      </div>
+
+      <!-- 傳說對決 -->
+      <div class="product">
+        <div class="media">
+          <img src="https://upload.wikimedia.org/wikipedia/zh/f/fd/%E5%82%B3%E8%AA%AA%E5%B0%8D%E6%B1%BA%E5%8F%B0%E7%81%A3LOGO.png" 
+               alt="傳說對決" loading="lazy" decoding="async">
+        </div>
+        <h2>傳說對決</h2>
+        <p>點擊了解更多資訊</p>
+        <a class="btn" href="https://discord.com/channels/1330046493180170341/1397538662606180373" 
+           target="_blank" rel="noopener noreferrer">點入瞭解價格</a>
+      </div>
+
+      <!-- VALORANT -->
+      <div class="product">
+        <div class="media">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Valorant_logo_-_pink_color_version.svg" 
+               alt="VALORANT" loading="lazy" decoding="async">
+        </div>
+        <h2>VALORANT</h2>
+        <p>點擊了解更多資訊</p>
+        <a class="btn" href="https://discord.com/channels/1330046493180170341/1393506077974331402" 
+           target="_blank" rel="noopener noreferrer">點入瞭解價格</a>
+      </div>
+
+      <!-- Shark VPN -->
+      <div class="product">
+        <div class="media">
+          <img src="https://uploadcdn.8591.com.tw/ware/20230302/16776957902123582MU.png!t900x5999.webp" 
+               alt="Shark VPN" loading="lazy" decoding="async">
+        </div>
+        <h2>Shark VPN</h2>
+        <p>點擊了解更多資訊</p>
+        <a class="btn" href="https://discord.com/channels/1330046493180170341/1397540663358367845" 
+           target="_blank" rel="noopener noreferrer">點入瞭解價格</a>
+      </div>
+
+    </div> <!-- /product-grid -->
+
+
+  </div> <!-- /container -->
+
+
+
+  <script>
+    // 簡單範例：點擊商品圖片時在 console 中顯示名稱
+    document.querySelectorAll('.product img').forEach(img => {
+      img.addEventListener('click', () => {
+        console.log('查看商品：' + img.alt);
+      });
+    });
+  </script>
+</body>
+</html>
